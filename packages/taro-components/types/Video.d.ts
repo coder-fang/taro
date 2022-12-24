@@ -282,12 +282,6 @@ interface VideoProps extends StandardProps {
    */
   mobilenetHintType?: string
 
-  /** 使用原生
-   * @default true
-   * @supported alipay
-   */
-  enableNative?: boolean
-
   /** 浮窗设置。暂时不支持全局浮窗。
    * 可选值：
    *
@@ -351,6 +345,11 @@ interface VideoProps extends StandardProps {
    * @supported weapp
    */
   preferredPeakBitRate?: number
+
+  /** 是否为直播源
+   * @supported weapp
+   */
+  isLive?: boolean
 
   /** 当开始/继续播放时触发 play 事件
    * @supported weapp, alipay, swan, tt, qq, jd, h5, rn
